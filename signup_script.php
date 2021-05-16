@@ -9,7 +9,7 @@
       $name=$_POST['Name'];
       $email=$_POST['email'];
       $password=$_POST['pwd'];
-
+      echo $email."--".$name."--".$password;
       $sql = "SELECT email FROM stu_details";
       $result = mysqli_query($conn, $sql);
       $count=0;
