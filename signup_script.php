@@ -57,7 +57,7 @@
       } 
       else 
       {
-        $sql = "INSERT INTO users (name,email,password) VALUES ('$name','$email','$password')";
+        $sql = "INSERT INTO stu_details (name,email,password) VALUES ('$name','$email','$password')";
 
           if (mysqli_query($conn, $sql)) {
             echo "New record created successfully";
