@@ -4,7 +4,7 @@
     if(isset($_POST['email']))
     {
 
-      $servername = "192.168.55.106";
+      $servername = "192.168.55.103";
       $username = "rohith";
       $password = "8538";
       $DBname="student";
