@@ -14,12 +14,12 @@
     echo "Connected successfully";
     
     $email=$conn->real_escape_string($_POST['email']);
-    $password=$conn->real_escape_string($_POST['pwd']);
+    $pass=$conn->real_escape_string($_POST['pwd']);
 
     $sql = "SELECT id,email FROM stu_details";
     $result = $conn->query($sql);
 
-    $sql = "SELECT * FROM stu_details WHERE email='$email' and password='password'";
+    $sql = "SELECT * FROM stu_details WHERE email='$email' and password='$pass'";
     $result = mysqli_query($conn, $sql);
 
     if (mysqli_num_rows($result) > 0) 
